@@ -13,7 +13,9 @@
         <h2>Postulación "Chile Limpio"</h2>
         <form id="form" class="form" action="" method="post">
             <label for="rut">Ingrese su rut(sin puntos): </label>
-            <input id="rut" class="rut" type="text">
+            <input id="rut" class="rut" type="text" style="display: inline-block; width: 65%; margin-right: 10px;">
+            <p style="display: inline-block; width: 5%; pointer-events: none;">—</p>
+            <input id="dig_v" class="dig_v" type="text" style="display: inline-block; width: 15%;">
             <br>
             <label for="nomb">Ingrese su nombre: </label>
             <input id="nomb" class="nomb" type="text">
@@ -29,8 +31,9 @@
             <input id="edad" class="edad" type="text" style="display: inline-block; width: 35%; pointer-events: none;" readonly>
             <br>
             <div>
-                <label for=" ">Ingrese su genero :</label>
-                    <select id="genero" name="genero" class="genero" style="width: 50%;">    
+                <label for="genero">Ingrese su genero :</label>
+                    <select id="genero" name="genero" class="genero" style="width: 50%;">
+                        <option value="">Seleccione una opción</option>    
                         <option value="masculino">Masculino</option>
                         <option value="femenino">Femenino</option>
                     </select>
@@ -40,7 +43,7 @@
             <input class="subN" type="text" value="+56" style="display: inline-block; width: 15%; pointer-events: none;" readonly>
             <input id="num_c" type="number" style="display: inline-block; width: 82%; margin-left: 10px;">
             <br>
-            <button id="registro" type="submit" >Enviar</button>
+            <button id="registro" type="submit"  >Enviar</button>
             <button type="button" onclick="generarCarta()">Crear Carta</button>
         </form>
     </div>
